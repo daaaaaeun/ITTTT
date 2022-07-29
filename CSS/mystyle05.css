@@ -15,3 +15,15 @@ div p { /*<div>안에 있는 모든 <p>*/
 h2,p {/*모든<h2>, 모든<p>*/
     color: aqua;
 }
+
+/*개나리에 글자 그림자 넣기*/
+div h2 {
+    text-shadow: 2px 2px rgb(0, 0, 78);
+}
+
+#mybox {/*Box Model*/
+    width: 320px;
+    padding: 10px;/*내용의 안쪽여백을 상하좌우 모두10px*/
+    border: 5px solid black;
+    margin: auto;/*수평을 기준으로 가운데 정렬*/
+}
