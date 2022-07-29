@@ -27,3 +27,29 @@ div h2 {
     border: 5px solid black;
     margin: auto;/*수평을 기준으로 가운데 정렬*/
 }
+
+/*부모>자식*/
+div>span>p {
+    text-shadow: 3px 3px rgb(191, 191, 227);
+    text-decoration-line: line-through;
+    text-decoration-color: yellow;
+}
+
+/*해바라기 접근*/
+div>span>h2 {
+    color: rgb(192, 162, 221);
+}
+
+#menu {
+    width: 100px;
+    height: 100px;
+    background: grey;
+}
+
+.hide {
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
