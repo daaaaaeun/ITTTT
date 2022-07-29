@@ -2,7 +2,10 @@
 /*mystyle05.CSS*/
 
 p{ /*모든 <p> 요소*/
-
+    font-family: 궁서체;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
 }
 
 div p {
