@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">                 
+    <head>                       
+        <title>14_layout.html</title>
+        <link rel="stylesheet" href="reset.css">
+        <style>
+            /* 1) */
+            /* .container{
+                        border: 2px solid blue;
+                        width: 900px; 전체 레이아웃 크기는 변하지 않게
+                        margin: auto; 레이어 가운데 정렬*/
+            .container{ border: 2px solid blue;
+                        width: 912px; 
+                        margin: auto;
+
+            }
+
+            /* 2)*/
+            header{
+                border: 2px solid red;
+                height: 150px;
+                width: 100%;
+                line-height: 150px;
+                text-align: center;
+
+            }
+
+            /* 3) */
+            .inner section{
+                border: 2px solid green;
+                height: 300px;
+                width: 300px;
+                float: left;
+            }
+        </style>
+    </head>
+    <body>                       
+        <!-- 전체 레이아웃 구성하기 -->
+
+        <div class="container">
+            <header>header</header>
+            <div class="inner">
+                <section>Section 1</section>
+                <section>Section 2</section>
+                <section>Section 3</section>
+            </div>
+            <footer>Footer</footer>
+        </div>
+    </body>                      
+</html>
