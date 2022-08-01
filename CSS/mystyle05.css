@@ -46,10 +46,40 @@ div>span>h2 {
     background: grey;
 }
 
-.hide {
+.hide { /*화면에 노출 안 됨*/
     width: 0;
     height: 0;
     margin: 0;
     padding: 0;
     font-size: 0;
+}
+
+#nav{
+    width: 300;
+    height: 500;
+    background: beige;
+    margin: auto;
+}
+
+#nav>ul{/* id=nav의 자식중에서 ul태그 */
+    list-style: none;
+}
+
+#nav>.news{/* id=nav안에서 모든 class=news */
+    background: olive;
+    font-weight: bold;
+}
+
+/*태그의 상세 속성 접근*/
+#nav>ol>li:nth-child(2){
+    font-weight: bold;
+
+}
+
+/*아이티윌 링크만 CSS적용*/
+#nav>ol>li>a{
+    width: 200px;
+    height: 100px;
+    background-color: hotpink;
+    text-decoration-style: wavy;
 }
