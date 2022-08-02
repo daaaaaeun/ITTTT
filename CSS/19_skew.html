@@ -14,6 +14,14 @@
                 margin: 5px;
                 display: inline-block;/*크기 지정도 가능하면서 글자를 옆으로 출력*/
             }
+
+            /*기울기*/
+            h1>span:nth-child(even){
+                transform: skewY(-20deg);
+            }
+            h1>span:nth-child(odd){
+                transform: skewY(20deg);
+            }
         </style>
     </head>
     <body>                       
