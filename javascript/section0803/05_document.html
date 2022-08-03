@@ -2,9 +2,22 @@
 <html lang="ko">                 
     <head>    
         <meta charset="UTF-8">                 
-        <title>05_document.html</title> 
+        <title>05_document.html</title>
+        <style>
+            #demo{
+                position: absolute;
+                right:0;
+                bottom: 0;
+                background-color: aqua;
+                width: 150px;
+                height: 150px;
+            }
+        </style>
     </head>
-    <body>       
+    <body>    
+        
+        <div id="demo"></div>
+
         <script>
             // 객체 Object
             // 객체명.멤버함수()
@@ -41,9 +54,57 @@
             document.write("<hr>");
             document.write("개나리<br> <p>진달래</p>");
             document.write("<img src='../../image/JJang.PNG'>");
+            //////////////////////////////////////////////////////////////
 
+            let str=""; //빈문자열(글자갯수가 0개)
+            str=str+"ONE";
+            document.write(str);
+            document.write("<hr>");
 
+            str=str+"TWO";
+            document.write(str);
+            document.write("<hr>");
 
+            str=str+"THRRE";
+            document.write(str);
+            document.write("<hr>");
+
+            ////////////////////////////////////////////////////////////
+
+            //<body>에 있는 id 속성 접근
+            //1)순수 JavaScript 접근
+            //document.getElementById("demo")
+            //document.getElementById("demo"). innerHTML="아이티윌"    
+
+              
+            //2)jQuery 접근 (jQuery라이브러리)
+            //$("#demo")
+            //$("#demo").val("아이티윌")
+
+            //연습) 이름, 나이, 키 값들을 표작성을 해서 id=demo에 출력하시오
+            name="김연아";
+            age=30;
+            height=165.7;
+
+            let result="";  //결과값
+            result=result + "<table border='1'>";
+            result=result + "<tr>";
+            result=result + "   <th>이름</th>";
+            result=result + "   <td>" + name + "</td>";
+            result=result + "</tr>";
+            result=result + "<tr>";
+            result=result + "   <th>나이</th>";
+            result=result + "   <td>" + age + "</td>";
+            result=result + "</tr>";
+            result=result + "<tr>";
+            result=result + "   <th>키</th>";
+            result=result + "   <td>" + height + "</td>";
+            result=result + "</tr>";
+            result=result + "</table>";
+
+            document.getElementById("demo").innerHTML=result
+
+          
 
         </script>                
 
