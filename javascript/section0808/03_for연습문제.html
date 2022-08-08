@@ -2,13 +2,68 @@
 <html lang="ko">                 
     <head>    
         <meta charset="UTF-8">                 
-        <title>03_for연습문제.html</title> 
+        <title>03_반복문연습문제.html</title> 
     </head>
     <body>    
         
         <h3></h3>
         <script>
+        //문1 아래와 같이 출력하시오
+        /*
+            12345
+            23456
+            34567
+            45678
+            56789
+        */
+       for(let a=0; a<5; a=a+1){
+        for(b=a+1; b<=a+5; b=b+1){
+            document.write(b);
+        }//for end
+        document.write("<br>");
+       }//for end
+       /*
+          a=0   0<5
+                    b=0+1   1<=0+5
+                            2<=0+5
+                            3<=0+5
+                            4<=0+5
+                            5<=0+5
+          a=1   1<5
+                    b=1+1   2<=1+5
+       */                
+
             
+
+
+        //문2)아래 그림과 같이 출력하시오
+        /*
+            @★★★
+            ★@★★
+            ★★@★
+            ★★★@       
+        */
+
+            for(a=1; a<4; a=a+1){
+                document.write("@");
+                document.write("<br>");
+                for(b=1; b<=a; b=b+1){
+                    document.write("★");
+                    document.write("<br>");
+                }
+            }
+         
+        //문3) 아래와 같이 누적의 합을 출력하시오 (회전수 증가)
+        /*
+            1+ ... +10=55
+            1+ ... +20=210
+            1+ ... +30=465
+
+            1+ ... +90=55
+            1+ ... +100=5050
+        */
+
+        //문4) 1~100사이 중에서 짝수의 합, 홀수의 합을 각각 구하시오
         </script>                
 
     </body>                      
