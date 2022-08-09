@@ -61,10 +61,14 @@
             let fruits=["Banana","Orange", "Apple", "Mango"];
             fruits[6]="Lemon";
             document.write(fruits.length); //배열요소의 갯수 7
-            document.write(fruits[6]);
-            document.write(fruits[4]);
-            document.write(fruits[5]);
-            document.write(fruits[8]);
+            document.write(fruits[6]);  //Lemon
+            document.write(fruits[4]);  //undefind
+            document.write(fruits[5]);  //undefind
+            document.write(fruits[8]);  //undefind
+
+
+            fruits[8]="Kiwi";
+            document.write(fruits.length);  ////배열요소의 갯수 9
 
 
         

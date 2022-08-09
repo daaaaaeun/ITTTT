@@ -6,9 +6,25 @@
     </head>
     <body>    
         
-        <h3></h3>
+        <h3>배열 객체 관련 메소드(함수)</h3>
         <script>
-            
+            let fruits=["Banana","Orange", "Apple", "Mango"];
+
+            document.write(fruits);         //Banana, Orange, Apple, Mango
+            document.write("<hr>");
+            document.write(fruits.toString()); //"Banana, Orange, Apple, Mango" (배열이 갖고있는 요소를 하나의 문자열로 출력)
+            document.write("<hr>");
+            document.write("#"+fruits.toString()+"#"); //#Banana, Orange, Apple, Mango#
+            document.write("<hr>");
+
+            document.write(fruits.length); //4 배열요소의 갯수
+            document.write("<hr>");
+            document.write(fruits.toString().length); //25 문자열 변환 후 글자 갯수(, 포함)
+            document.write("<hr>");
+
+            document.write(fruits.join("*")); //"Banana*Orange*Apple*Mango"
+            document.write("<hr>");
+
         </script>                
 
     </body>                      
