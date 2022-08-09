@@ -13,6 +13,74 @@
 
             document.write(num);
             document.write("<hr>");
+
+            //문1)배열 요소의 전체 합을 구하시오
+            document.write(num[0]+num[1]+num[2]+num[3]+num[4]);
+            document.write("<hr>");
+
+            let hap=0;
+            for(let i=0; i<size; i=i+1){
+                hap=hap+num[i];
+            }
+            document.write(hap);
+            document.write("<hr>");
+
+            //문2)음수의 갯수를 구하시오
+            /*
+                7<0     if(num[0]<0)
+                8<0     if(num[1]<0)
+                -9<0    if(num[2]<0) count=count+1
+                5<0     if(num[3]<0)
+                6<0     if(num[4]<0)
+            
+            
+            */
+
+            let count=0;
+            for(let i=0; i<size; i=i+1){
+                if(num[i]<0){
+                    count=count+1
+                }
+            }
+
+            document.write("음수의 갯수 : " + count);
+            document.write("<hr>");
+
+
+            //문3)최대값, 최소값을 각각 구하시오
+            //1)
+            document.write(Math.max(...num));
+            document.write("<hr>");
+            document.write(Math.min(...num));
+            document.write("<hr>");
+
+            //2)내림차순 정렬한 후, 최대값, 최소값 구하기
+            num.sort(function(a, b){return b - a});
+            document.write(num[0]);
+            document.write("<hr>");
+            document.write(num[size-1]);
+            document.write("<hr>");
+
+            //3)
+            let max=num[0]; //최대값
+            let min=num[0]; //최소값
+            /*
+                7<7     if(max<num[0])
+                7<8     if(max<num[1]) 참 max=8  max-num[1]
+                8<-9    if(max<num[2])
+                8<5     if(max<num[3])
+                8<6     if(max<num[4])
+            
+            */
+
+            for(let i=0; i<size; i=i+1){
+                if(max<num[i]) max=num [i];
+                if(min>num[i]) min=num [i];
+            }
+
+            //문4)num[4]요소의 등수를 구하시오
+
+            //문5)num배열 요소의 각각의 등수를 모두 구하시오
         </script>                
 
     </body>                      
