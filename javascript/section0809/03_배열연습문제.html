@@ -55,11 +55,13 @@
             document.write("<hr>");
 
             //2)내림차순 정렬한 후, 최대값, 최소값 구하기
+           /*
             num.sort(function(a, b){return b - a});
             document.write(num[0]);
             document.write("<hr>");
             document.write(num[size-1]);
             document.write("<hr>");
+            */
 
             //3)
             let max=num[0]; //최대값
@@ -78,9 +80,68 @@
                 if(min>num[i]) min=num [i];
             }
 
+            
+            document.write("최대값:"+max);
+            document.write("<hr>");
+            document.write("최소값:"+min);
+            document.write("<hr>");
+
+
             //문4)num[4]요소의 등수를 구하시오
+            /*
+                6<7     if(num[4]<num[0])   r=r+1
+                6<8     if(num[4]<num[1])   r=2+1
+                6<-9    if(num[4]<num[2])
+                6<5     if(num[4]<num[3])
+                6<6     if(num[4]<num[4])
+            
+            */
+
+            let r=1;
+            for(let i=0; i<size; i=i+1){
+                if(num[4]<num[i]){
+                    r=r+1;
+                }
+            }
+
+            document.write("num[4]요소의 등수: " + r);
+            document.write("<hr>");
 
             //문5)num배열 요소의 각각의 등수를 모두 구하시오
+            /*
+                7<7     if(num[0]<num[0])
+                7<8     if(num[0]<num[1])   rank[0]=rank[0]+1  
+                7<-9    if(num[0]<num[2])
+                7<5     if(num[0]<num[3])
+                7<6     if(num[0]<num[4])
+
+                8<7     if(num[1]<num[0])
+                8<8     if(num[1]<num[1])
+                8<-9    if(num[1]<num[2])
+                8<5     if(num[1]<num[3])
+                8<6     if(num[1]<num[4])
+
+                -9<7    if(num[2]<num[0])   rank[2]=rank[2]+1
+                -9<8    if(num[2]<num[1])   rank[2]=rank[2]+1
+                -9<-9   if(num[2]<num[2])
+                -9<5    if(num[2]<num[3])   rank[2]=rank[2]+1
+                -9<6    if(num[2]<num[4])   rank[2]=rank[2]+1
+            
+            */
+
+            let rank=[1, 1, 1, 1, 1];
+            for(let a=0; a<size; a=a+1){
+                for(let b=0; b<size; b=b+1){
+                    if(num[a]<num[b]){
+                        rank[a]=rank[a]+1;
+
+                    }
+                }
+            }
+
+            document.write("num배열요소의 각 등수: " + rank);
+            document.write("<hr>");
+
         </script>                
 
     </body>                      
