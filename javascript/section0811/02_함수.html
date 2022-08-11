@@ -33,6 +33,24 @@
                 return c; //c값을 리턴. 1개만 리턴할 수 있다 (이런경우가 리턴값이 있는경우)
             }//test3() end
 
+            function fact(f){
+                let gop=1; //중괄호 나가면 없어짐
+                for(a=f; a>=1; a--){
+                    gop=gop*a;
+                }//for end
+                return gop; //나는 이값으로 나를 부른걸 되돌리겠다
+            }//fact() end
+
+            function leap(year){
+                if(year%4==0 && year%100!=0 || year%400==0){
+                    return true;    //윤년이면 리턴값으로 트루 나와
+                }else{
+                    return false;
+                }//if end
+            }//leap() end
+
+            /////////////////////////////////////////////////////////////////////////////
+
             test1(); //함수 호출
             test2(3);
             test2(-5);
@@ -42,6 +60,23 @@
             document.write(result);     //변수값
             document.write(13);         //상수값
             document.write(test3(8,9));  //함수의 리턴값
+            document.write("<hr>");
+
+            //문1) 팩토리얼값을 구하시오 4*3*2*1
+            let gop=fact(4);
+            document.write(gop);
+
+            document.write("<hr>");
+
+
+            //문2) 윤년, 평년을 구하시오
+            if(leap(2022)){
+                document.write("윤년");
+            }else{
+                document.write("평년");
+            }//if end
+
+            
 
 
 
