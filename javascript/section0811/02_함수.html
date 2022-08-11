@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">                 
+    <head>    
+        <meta charset="UTF-8">                 
+        <title>02_함수.html</title> 
+    </head>
+    <body>    
+        
+        <h3></h3>
+        <script>
+            //3. 리턴값이 있는 경우
+            // - 함수는 호출한 시점으로 되돌아 온다(return)
+            // - 리턴값 : 값을 가지고 호출한 시점으로 되돌아 온다
+            // - 리턴값 : 1개만 가능하다
+            // - 형식) return 값
+
+            function test1(){
+                document.write("SEOUL");
+                return; //호출시점으로 되돌아 간다.
+                        //맨 마지막 return은 생략가능하다.
+            }//for end
+            /////////////////////////////////////////////////////////////
+
+            function test2(a){
+                if(a<0){
+                   return; 
+                }
+                document.write(a);
+            }//test2() end
+
+            function test3(a, b){
+                let c=a+b;
+                return c; //c값을 리턴. 1개만 리턴할 수 있다 (이런경우가 리턴값이 있는경우)
+            }//test3() end
+
+            test1(); //함수 호출
+            test2(3);
+            test2(-5);
+            document.write("<hr>");
+
+            let result=test3(6, 7);
+            document.write(result);     //변수값
+            document.write(13);         //상수값
+            document.write(test3(8,9));  //함수의 리턴값
+
+
+
+        </script>                
+
+    </body>                      
+</html>  
