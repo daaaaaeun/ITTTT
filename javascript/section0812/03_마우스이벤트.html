@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">                 
+    <head>    
+        <meta charset="UTF-8">                 
+        <title>03_마우스이벤트.html</title> 
+    </head>
+    <body>    
+        
+        <h3>마우스 이벤트</h3>
+
+        <table border="1">
+            <tr>
+                <th onmouseover="show('r')">짱이</th>
+                <th onmouseover="show('n')">네오</th>
+                <th onmouseover="show('j')">제이지</th>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <div id="JJang" style="display: block;"></div>
+                        <img src="../../image/JJang.PNG">
+                    </div>
+                    <div id="neo" style="display: none;">
+                        <img src="../../image/k5.png">
+                    </div>
+                    <div id="jayg" style="display: none;">
+                        <img src="../../image/k3.png">
+                    </div>
+
+                </td>
+            </tr>
+        </table>
+
+
+        <script>
+            function show(kind){
+                //alert(kind);
+                switch(kind){
+                    case "r": document.getElementById("JJang").style.display="block";
+                              document.getElementById("neo").style.display="none";
+                              document.getElementById("jayg").style.display="none";
+                              break;
+                    case "n": document.getElementById("JJang").style.display="none";
+                              document.getElementById("neo").style.display="block";
+                              document.getElementById("jayg").style.display="none";
+                              break;
+                    case "j": document.getElementById("JJang").style.display="none";
+                              document.getElementById("neo").style.display="none";
+                              document.getElementById("jayg").style.display="block";
+                              break;          
+                }//switch end
+            }//show() end
+        </script>                
+
+    </body>                      
+</html> 
