@@ -46,6 +46,32 @@
            document.write(str.substring(str.length-1, str.length));
            document.write("<hr>");
 
+           //문자열 분리하기
+           document.write(str.slice(10, 13)); //"The"
+           document.write("<hr>");
+
+           //문자열 합치기
+           let text1="Hello";
+           let text2="World";
+           let text3=text1.concat(text2);
+           document.write(text3);       //"Helloworld"
+           document.write("<hr>");
+
+           //문자열 맨앞, 맨뒤 공백제거하기
+           let text4="  Java Script     "
+           document.write("#"+text4.trim()+"#");
+           document.write("<hr>");
+
+            //4칸을 기준으로 빈칸은 0으로 앞에서 부터 채우기
+           let text5="9"
+           document.write(text5.padStart(4,0));
+           document.write("<hr>");
+
+           //4칸을 기준으로 빈칸은 0으로 뒤에서 부터 채우기
+           let text6="8"
+           document.write(text6.padEnd(4,0));
+           document.write("<hr>");
+
 
         </script>                
 
