@@ -87,4 +87,8 @@ function validate2(){
 
     //<input type=submit>과 동일한 기능의 자바스크립트 함수
     frm.submit();
+
+    //<input type=submit>와 동일한 기능의 자바스크립트 함수
+    //폼양식내에 있는 폼컨트롤 요소가 가지고 있던 최초의 상태로 복귀
+    //frm.reset();
 }//validate2() end
