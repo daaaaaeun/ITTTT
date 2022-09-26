@@ -15,8 +15,19 @@
         <div id="html"></div>
 
         <script>
-   
+            //본문에 있는 <button>요소 접근
+            $("button").click(function(){
+                //alert();
+                let txt="<img src='../image/devil.png'>";
+
+                //JavaScript
+                document.getElementById("text").innerText=txt;
+                document.getElementById("html").innerHTML=txt;
+
+            });//click end
 
         </script>
+
+
     </body>                      
 </html>  
