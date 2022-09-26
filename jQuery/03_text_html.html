@@ -21,8 +21,12 @@
                 let txt="<img src='../image/devil.png'>";
 
                 //JavaScript
-                document.getElementById("text").innerText=txt;
-                document.getElementById("html").innerHTML=txt;
+                //document.getElementById("text").innerText=txt;
+                //document.getElementById("html").innerHTML=txt;
+
+                //jQuery
+                $("#text").text(txt); //단순 문자열
+                $("#html").html(txt); //문자열이 마크업되면서(요소생성) 출력 
 
             });//click end
 
