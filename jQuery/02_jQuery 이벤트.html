@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">                 
+    <head>    
+        <meta charset="UTF-8">                 
+        <title>02_jQuery 이벤트.html</title> 
+        <script src="jquery-3.6.1.min.js"></script>
+    </head>
+    <body>    
+        
+    
+        <h3>jQuery 이벤트</h3>
+        <form id="memfrm" name="memfrm" action="ok.jsp">
+            아이디 : <input type="text" id="uid" name="uid" value="ITWILL">
+            <hr>
+            <!-- <button>요소는 기본속성이 type=submit 동일하다 -->
+                <button id="btn_idcheck">ID중복확인</button>
+                <button id="btn_join">회원가입</button>
+                <button id="btn_reset">다시쓰기</button>
+        <script>
+          //<button id="btn_idcheck">ID중복확인</button>
+          //1)JavaScript 접근
+          alert(document.getElementById("uid").value);
+          //2)jQuery 접근
+        </script>
+    </body>                      
+</html>  
