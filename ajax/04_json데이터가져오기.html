@@ -32,7 +32,9 @@
                                                     str += "</tr>";
                                                 }//for end
                                                 str+="</table>";
-                                                $("#panel").html(str);
+                                                //$("#panel").html(str);
+                                                //$("#panel").text(str);
+                                                $("#panel").append(str);
                                         }//success end
                 });//ajax() end
             });//click end
