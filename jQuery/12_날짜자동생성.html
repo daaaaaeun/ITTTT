@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">                 
+    <head>    
+        <meta charset="UTF-8">                 
+        <title>12_날짜자동생성.html</title>
+        <script src="jquery-3.6.1.min.js"></script>
+        <script src="moment-with-locales.js"></script>
+    </head>
+    <body>    
+       
+        <h3>날짜 데이터 자동 생성</h3>        
+        
+        생년월일 :
+        <select id="myYear"></select>년
+        <select id="mymonth"></select>월
+        <select id="myDate"></select>일
+
+        <script>
+            
+            createYearMonth(); //최초로 함수 한번만 호출
+
+            //년, 월 생성하기
+            function createYearMonth(){
+                //alert();
+
+                //1) 1월~12월 생성후 추가
+                for(m=1; m<=12; m++){
+                    $("#myMonth").append($("<option>").text(m));
+                }//for end
+
+            }//createYearMonth() end
+
+        </script>
+    </body>                      
+</html>

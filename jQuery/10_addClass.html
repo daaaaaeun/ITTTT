@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">                 
+    <head>    
+        <meta charset="UTF-8">                 
+        <title>10_addClass.html</title>
+        <link rel="stylesheet" href="../CSS/reset.css/">
+        <link rel="stylesheet" href="">
+        <!-- jQuery import -->
+        <script src="jquery-3.6.1.min.js"></script>
+        <style>
+            #box{
+                width: 
+            }
+
+            /*3)CSS추가*/
+            img {
+                opacity: 0;
+                transform: scale(0);
+                transition: .4s ease;
+            }
+
+            /*4)CSS추가*/
+            #box.open  #startBtn{
+                left: -100%;
+                transition: .4s ease;
+            }
+
+            /*5)CSS추가*/
+            #box.open  img{
+                opacity: 1;
+                transform: scale(1);
+                transition: .4s ease;
+            }
+        </style>
+    </head>
+    <body>    
+       
+        <div id="box">
+            <button id="startBtn">스타트!</button>
+            <img src="../image/JJang3.PNG" />
+        </div>         
+        <script>
+            $("#startBtn").click(function(){
+                $("#box").addClass("open");
+            });//click end
+
+            $("img").click(function(){
+                $("#box").removeClass("open");
+            });//click end
+
+        </script>
+    </body>                      
+</html>
