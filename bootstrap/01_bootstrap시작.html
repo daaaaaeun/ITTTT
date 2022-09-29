@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="ko">                 
     <head>    
-        <meta charset="UTF-8">                 
+        <meta charset="UTF-8">       
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--
+            - 모든 장치에서 웹사이트를 잘 보이게 하기 위해 뷰포트 설정
+            - Desktop, Tablet, Mobile등 각 장비에 따라서 반응
+            - 반응형 웹이 적용되려면 추가해야 함  
+        -->           
         <title>01_bootstrap시작.html</title>
         <script src="jquery-3.6.1.min.js"></script>
     </head>
     <body>    
        
-        참조
+        참조 https://www.w3schools.com/bootstrap/bootstrap_ver.asp
+
+        ● [Bootstrap]
+            - HTML, CSS, JavaScript framework
+            - Bootstrap 3, 4, 5가 있다
+            - 웹페이지 개발시 frontend(UI, view)단을 구현하기 위한 무료 오픈소스
+            - 주로 CSS, 레이아웃, 반응형 웹 구현시 많이 사용한다
+
+        ● [Bootstrap 사용방법]
+        
+            1) 직접링크 (CDN)
+                <!-- Latest compiled and minified CSS -->
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+                <!-- jQuery library -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                <!-- Latest compiled JavaScript -->
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+            2) 라이브러리 다운
+
+            https://getbootstrap.com/docs/5.2/getting-started/download/
 
 
 
-        ● AJAX = Asynchronous JavaScript and XML.
-            - 페이지 전체를 로딩하지 않고
-            서버에 있는 데이터를 가져와서 페이지 일부분만 바꿀수 있다
-            - 문자단위로 통신(비동기 방식) 
-            - 한개의 페이지에서 요청과 응답이 동시에 이루어짐
-
-            1) JavaScript : XMLHttpRequest 객체
-            2) jQuery     : $.ajax()함수
-
-        ● 형식) $.ajax({요청명령}, callback함수)    
-            - callback함수 : 서버로부터 응답받은 후 호출되는 함수
-            - 요청명령의 세부사항 : ulr, method, dataType, data, success, error 등
-
-        ● 요청명령 세부사항
-            1) dataType : text, json, xml등
-            2) type     : GET, POST, PUT, DELETE
-            3) data     : 서버에 요청할 데이터
-            4) error    : 에러시 호출되는 함수
-            5) success  : 성공시 호출되는 함수 (callback함수)   
 
         <script>
    
